@@ -1,0 +1,47 @@
+.discount {
+  padding: 110px 0;
+  background: url(../images/discount/discount-bg.jpg) top center / cover no-repeat fixed;
+  text-align: center;
+  margin: 0 0 100px 0;
+
+  @media (max-width: 768px) {
+    padding: 50px 0;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__old-price {
+    font-size: 24px;
+    line-height: 34px;
+    text-decoration-line: line-through;
+    color: #ffffff;
+    margin: 0 12px 28px 0;
+  }
+
+  &__new-price {
+    @extend %montserrat-700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #1d293f;
+    padding: 3px 11px;
+    background-color: #ffd166;
+    border-radius: 5px;
+    margin: 0 0 28px 0;
+  }
+
+  &__title {
+    line-height: 64px;
+    letter-spacing: -1px;
+    color: #ffffff;
+  }
+
+  &__desc {
+    font-size: 24px;
+    line-height: 36px;
+    color: #ffffff;
+    margin: 0 0 72px 0;
+  }
+}

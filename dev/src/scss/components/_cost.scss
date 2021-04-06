@@ -1,0 +1,80 @@
+.cost {
+  background: url(../images/cost/cost-bg.jpg) top center / cover no-repeat fixed #b8b8b8;
+  color: #ffffff;
+  padding: 94px 0 64px;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    padding: 40px 0 30px;
+  }
+
+  &__title {
+    color: #ffffff;
+    margin: 0 0 35px 0;
+  }
+
+  &__row {
+    max-width: 731px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__box {
+    margin: 0 15px 29px 0;
+
+    @media (max-width: 576px) {
+      margin: 0 0 29px 0;
+    }
+
+    &:last-child {
+      margin: 0 0 29px 0;
+    }
+  }
+
+  &__price {
+    display: block;
+    margin: 0 auto 57px;
+    @extend %montserrat-700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #1d293f;
+    padding: 3px 19px;
+    background-color: #ffd166;
+    border-radius: 5px;
+  }
+}
+.cost-box {
+  width: 350px;
+  height: 139px;
+  border: 2px dashed #ffffff;
+  border-radius: 5px;
+  padding: 23px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 470px) {
+    width: 300px;
+  }
+
+  &__desc {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__price {
+    @extend %montserrat-900;
+    font-size: 21px;
+    line-height: 26px;
+  }
+}

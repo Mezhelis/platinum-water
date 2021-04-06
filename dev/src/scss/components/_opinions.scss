@@ -1,0 +1,114 @@
+.opinion-box {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 100px 0;
+
+  @media (max-width: 470px) {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 59px 0;
+  }
+  @media (max-width: 576px) {
+    margin: 0 25px 55px 25px;
+  }
+  @media (max-width: 768px) {
+    margin: 0 25px 25px 25px;
+  }
+
+  &__img {
+    max-width: 445px;
+    max-height: 592px;
+    min-width: 130px;
+    min-height: 174px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 124px 45px 0;
+
+    @media (max-width: 470px) {
+      margin: 0 0 45px 0;
+    }
+
+    @media (max-width: 992px) {
+      margin: 0 25px 45px 0;
+    }
+
+    &::before {
+      content: url(../images/opinions/icon/icon-1.png);
+      width: 196px;
+      height: 191px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      object-fit: contain;
+      position: absolute;
+      overflow: hidden;
+      left: -50px;
+      bottom: -45px;
+
+      @media (max-width: 470px) {
+        display: none;
+      }
+      @media (max-width: 576px) {
+        width: 132px;
+        height: 132px;
+        left: -40px;
+        bottom: -26px;
+      }
+    }
+
+    &--right {
+      order: 1;
+      margin: 40px 0 0 124px;
+
+      &::before {
+        top: -40px;
+        bottom: auto;
+        right: -50px;
+        left: auto;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      z-index: 1;
+      position: relative;
+    }
+  }
+  &__info {
+    max-width: 540px;
+  }
+  &__title {
+    margin: 0 0 19px 0;
+    text-align: left;
+
+    @media (max-width: 576px) {
+      font-size: 20px;
+      line-height: 26px;
+    }
+    @media (max-width: 992px) {
+      font-size: 28px;
+      line-height: 30px;
+    }
+  }
+  &__text {
+    font-size: 24px;
+    line-height: 34px;
+    color: #1d293f;
+    margin: 0 0 45px 0;
+
+    @media (max-width: 992px) {
+      font-size: 17px;
+      line-height: 25px;
+      margin: 0 0 10px 0;
+    }
+  }
+  &__author {
+    line-height: 17px;
+    color: #0f53fa;
+  }
+}
